@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "next": "^7.0.2",
+    "next": "latest",
     "react-dom": "^16.6.3",
     "react": "^16.6.3"
   },
@@ -13,7 +13,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js",
+    "export": "npm run build && next export"
   },
   "repository": {
     "type": "git",
