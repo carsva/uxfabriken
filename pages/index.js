@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
+import './../normalize.css';
+import './../index.css';
 
-const BodyStyle = styled.body`
+const BodyStyle = styled.div`
   background: #00183C;
   display: flex;
-  width: 100vw;
-  height: 100vh;
   align-items: center;
   justify-content: center;
 `;
@@ -19,9 +19,7 @@ class Index extends Component {
   render() {
     return (
       <BodyStyle>
-      <div>
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
-      </div>
       </BodyStyle>
 
     );
