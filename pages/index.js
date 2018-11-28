@@ -4,15 +4,15 @@ import './../normalize.css';
 import './../index.css';
 
 const BodyStyle = styled.div`
-  background: #00183C;
+  background: palevioletred;
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
 `;
 
 const LogoStyle = styled.img`
-  width: 80%;
-  margin-top: 0em;
+  width: 40%;
+  margin-top: 6em;
 `;
 
 class Index extends Component {
