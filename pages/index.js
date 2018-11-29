@@ -21,7 +21,7 @@ const BodyStyle = styled.div`
 const LogoStyle = styled.img`
 @media (min-width: 100px) {
   width: 70%;
-  margin-top: 16em;
+  margin-top: 8em;
   
 }
   
@@ -42,7 +42,7 @@ const StickerBlockStyle = styled.div`
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  margin-top: 10rem;
+  margin-top: 6rem;
   
 }
 
