@@ -34,7 +34,7 @@ class Index extends Component {
   random_bg_color();
   };
 
-test = () => {
+quote = () => {
   console.log('hello');
 }
 
@@ -53,14 +53,14 @@ test = () => {
 // `;
 
 
-const Bubble = () => <BubbleAnimation onClick={this.test} className="pratbubbla" src={`/static/img/pratbubbla.svg`} />
+const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla" src={`/static/img/pratbubbla.svg`} />
 
   
     
     return (
       <BodyStyle>
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
-         <Bubble onClick={this.test}/>
+         <Bubble onClick={this.quote}/>
          
       </BodyStyle>
 
