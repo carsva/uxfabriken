@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
+import ReactDOM from 'react-dom';
+import posed from 'react-pose';
 import './../normalize.css';
 import './../index.css';
 
@@ -13,6 +15,16 @@ const LogoStyle = styled.img`
   width: 50%;
   margin-top: 16em;
 `;
+
+const Box = posed.div({
+  pressable: true,
+  init: { scale: 1 },
+  press: { scale: 0.8 }
+});
+
+const Example = () => <Box className="box" />
+
+
 
 class Index extends Component {
 
@@ -31,10 +43,13 @@ class Index extends Component {
   };
 
   render() {
+
+  
     
     return (
       <BodyStyle>
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
+         <Example />
       </BodyStyle>
 
     );
