@@ -17,7 +17,8 @@
     "dev": "next",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "export": "npm run build && next export"
+    "export": "npm run build && next export",
+    "deploy": "now"
   },
   "repository": {
     "type": "git",

@@ -34,15 +34,27 @@ html {
   background: #fff;
 }
 
-.pratbubbla {
-  width: 8%;
-  margin-top: 2em;
-}
-
 img {
   -khtml-user-select: none;
   -o-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+}
+
+@media (min-width: 568px) {
+  .pratbubbla {
+    width: 50%;
+    margin-top: 8em;
+  }
+  
+}
+
+
+@media (max-width: 568px) {
+  .pratbubbla {
+    width: 50%;
+    margin-top: 8em;
+  }
+
 }

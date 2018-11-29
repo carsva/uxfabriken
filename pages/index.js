@@ -10,19 +10,53 @@ const BodyStyle = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 568px) {
+    
+    
+  }
+
 `;
 
 const LogoStyle = styled.img`
-  width: 15%;
+@media (min-width: 568px) {
+  width: 70%;
   margin-top: 16em;
+  
+}
+  
+
+  @media (max-width: 568px) {
+    width: 70%;
+    
+    
+  }
 `;
 
 const StickerBlockStyle = styled.div`
+
+@media (min-width: 568px) {
+  width: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   margin-top: 10rem;
+  
+}
+
+  @media (max-width: 568px) {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 10rem;
+
+  }
+
 `;
 
 
@@ -84,7 +118,7 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
          <Bubble onClick={this.quote}/>
          <StickerBlockStyle>
-            <Sticker text="0704 991 702" color={this.state.color} rotation="rotate(6deg)"/>
+            <Sticker text="+46 704 991 702" color={this.state.color} rotation="rotate(6deg)"/>
             <Sticker text="carl@tocco.se" color={this.state.color} rotation="rotate(2deg)"/>
             <Sticker text="Slottsbacken 8, Gamla Stan, Stockholm" color={this.state.color} rotation="rotate(-3deg)"/>
             <Sticker text=":)" color={this.state.color} rotation="rotate(4deg)"/>
