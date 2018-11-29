@@ -12,7 +12,7 @@ const BodyStyle = styled.div`
 `;
 
 const LogoStyle = styled.img`
-  width: 14%;
+  width: 15%;
   margin-top: 16em;
 `;
 
@@ -20,8 +20,8 @@ const LogoStyle = styled.img`
 
 class Index extends Component {
 
-  componentDidMount() {
-    function random_bg_color() {
+  randomBackground = () => {
+    
       var x = Math.floor(Math.random() * 256);
       var y = Math.floor(Math.random() * 256);
       var z = Math.floor(Math.random() * 256);
@@ -30,12 +30,13 @@ class Index extends Component {
     
       document.body.style.background = bgColor;
       }
-  
-  random_bg_color();
+
+  componentDidMount() {
+    this.randomBackground()
   };
 
 quote = () => {
-  console.log('hello');
+  this.randomBackground()
 }
 
 
