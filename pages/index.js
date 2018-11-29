@@ -7,13 +7,22 @@ import './../index.css';
 
 const BodyStyle = styled.div`
   display: flex;
-  align-content: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 `;
 
 const LogoStyle = styled.img`
-  width: 50%;
+  width: 20%;
   margin-top: 16em;
+  margin-bottom: 3em;
+  .press{
+    outline-width: 0;
+  }
+  
+  .press:focus{
+    outline: none;
+  }
 `;
 
 const Box = posed.div({
@@ -49,7 +58,7 @@ class Index extends Component {
     return (
       <BodyStyle>
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
-         <Example />
+         <Example/>
       </BodyStyle>
 
     );
