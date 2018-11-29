@@ -42,25 +42,25 @@ test = () => {
 
   render() {
 
-    const Box1 = posed.img({
+  const BubbleAnimation = posed.img({
   pressable: true,
   init: { scale: 1 },
   press: { scale: 0.8 }
 });
 
-const Img = styled(Box1)`
-width:95%;
-`;
+// const Img = styled(Box1)`
+// width:95%;
+// `;
 
 
-const Example1 = () => <Box1 onClick={this.test} className="pratbubbla" src={`/static/img/pratbubbla.svg`} />
+const Bubble = () => <BubbleAnimation onClick={this.test} className="pratbubbla" src={`/static/img/pratbubbla.svg`} />
 
   
     
     return (
       <BodyStyle>
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
-         <Example1 onClick={this.test}/>
+         <Bubble onClick={this.test}/>
          
       </BodyStyle>
 
