@@ -16,18 +16,7 @@ const LogoStyle = styled.img`
   margin-top: 16em;
 `;
 
-const Box1 = posed.img({
-  pressable: true,
-  init: { scale: 1 },
-  press: { scale: 0.8 }
-});
 
-const Img = styled(Box1)`
-width:95%;
-`;
-
-
-const Example1 = () => <Box1 className="pratbubbla" src={`/static/img/pratbubbla.svg`} />
 
 class Index extends Component {
 
@@ -45,14 +34,34 @@ class Index extends Component {
   random_bg_color();
   };
 
+test = () => {
+  console.log('hello');
+}
+
+
+
   render() {
+
+    const Box1 = posed.img({
+  pressable: true,
+  init: { scale: 1 },
+  press: { scale: 0.8 }
+});
+
+const Img = styled(Box1)`
+width:95%;
+`;
+
+
+const Example1 = () => <Box1 onClick={this.test} className="pratbubbla" src={`/static/img/pratbubbla.svg`} />
 
   
     
     return (
       <BodyStyle>
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
-         <Example1/>
+         <Example1 onClick={this.test}/>
+         
       </BodyStyle>
 
     );
