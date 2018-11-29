@@ -34,6 +34,11 @@ html {
   background: #fff;
 }
 
+.pratbubbla {
+  width: 8%;
+  margin-top: 2em;
+}
+
 img {
   -khtml-user-select: none;
   -o-user-select: none;

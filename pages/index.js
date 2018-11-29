@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import ReactDOM from 'react-dom';
 import posed from 'react-pose';
 import './../normalize.css';
 import './../index.css';
@@ -13,27 +12,22 @@ const BodyStyle = styled.div`
 `;
 
 const LogoStyle = styled.img`
-  width: 20%;
+  width: 14%;
   margin-top: 16em;
-  margin-bottom: 3em;
-  .press{
-    outline-width: 0;
-  }
-  
-  .press:focus{
-    outline: none;
-  }
 `;
 
-const Box = posed.div({
+const Box1 = posed.img({
   pressable: true,
   init: { scale: 1 },
   press: { scale: 0.8 }
 });
 
-const Example = () => <Box className="box" />
+const Img = styled(Box1)`
+width:95%;
+`;
 
 
+const Example1 = () => <Box1 className="pratbubbla" src={`/static/img/pratbubbla.svg`} />
 
 class Index extends Component {
 
@@ -58,7 +52,7 @@ class Index extends Component {
     return (
       <BodyStyle>
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
-         <Example/>
+         <Example1/>
       </BodyStyle>
 
     );
