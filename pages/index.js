@@ -11,7 +11,7 @@ const BodyStyle = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 568px) {
+  @media (max-width: 567px) {
     
     
   }
@@ -19,23 +19,23 @@ const BodyStyle = styled.div`
 `;
 
 const LogoStyle = styled.img`
-@media (min-width: 568px) {
+@media (min-width: 100px) {
   width: 70%;
   margin-top: 16em;
   
 }
   
 
-  @media (max-width: 568px) {
-    width: 70%;
-    
+@media (min-width: 1000px) {
+    width: 20%;
+    margin-top: 16em;
     
   }
 `;
 
 const StickerBlockStyle = styled.div`
 
-@media (min-width: 568px) {
+@media (min-width: 100px) {
   width: auto;
   display: flex;
   flex-wrap: wrap;
@@ -46,7 +46,7 @@ const StickerBlockStyle = styled.div`
   
 }
 
-  @media (max-width: 568px) {
+  @media (min-width: 1000px) {
   width: auto;
   display: flex;
   flex-wrap: wrap;
