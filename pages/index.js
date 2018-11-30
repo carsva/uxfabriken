@@ -81,6 +81,7 @@ class Index extends Component {
       var bgColor = "rgb(" + x + "," + y + "," + z + ")";
     
       document.body.style.background = bgColor;
+  
       this.setState({
         color: bgColor
       })
