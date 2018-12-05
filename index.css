@@ -16,10 +16,12 @@ html {
 }
 
 #bodymovin {
-  width: 200px !important;
-  height: 200px !important;
+  width: 350px !important;
+  height: 350px !important;
   position: absolute;
-  opacity: 20%;
+  z-index: -1;
+  margin-top: 3.8%;
+  opacity: 0.7;
 }
 
 #root {

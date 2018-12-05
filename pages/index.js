@@ -75,26 +75,26 @@ class Index extends Component {
 
   }
 
-  animationSetup = () => {
-    var animationdata = burst();
+  animationSetup = (order) => {
     var container = document.getElementById('bodymovin');
+
+    if (container.innerHTML = !"") {
+      container.innerHTML = ""
+    }
+    var animationdata = burst();
+    
     // Set up our animation
     var animData = {
      container: container,
      renderer: 'svg',
-     autoplay: false,
-     loop: false,
      animationData: animationdata
       
     };
     var anim = lottie.loadAnimation(animData);
     
-    
-    
-    container.addEventListener('click', function(event) {
-         anim.playSegments([0,20], true);
-
-    });
+    if (order) {
+      anim.playSegments([0,20], true);
+    } 
     
   }
 
@@ -119,6 +119,7 @@ class Index extends Component {
 
 quote = () => {
   this.randomBackground()
+  this.animationSetup('svenne')
 
 }
 
