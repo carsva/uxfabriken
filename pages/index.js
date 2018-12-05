@@ -101,29 +101,17 @@ class Index extends Component {
      container: container,
      renderer: 'svg',
      autoplay: false,
-     loop: true,
+     loop: false,
      animationData: animationdata
       
     };
     var anim = lottie.loadAnimation(animData);
     
-    anim.addEventListener('DOMLoaded',firstLoop);
     
-    function firstLoop() {
-      anim.playSegments([0,6], true);
-    };
-    function transition() {
-       anim.playSegments([6,13], true);
-       anim.removeEventListener('loopComplete');
-       anim.addEventListener('loopComplete', secondLoop );
-    };
-    function secondLoop() {
-        anim.playSegments([0,6], true);
-        anim.removeEventListener('loopComplete');
-    };
     
     container.addEventListener('click', function(event) {
-         anim.addEventListener( 'loopComplete', transition );
+         anim.playSegments([0,20], true);
+
     });
     
     anim.setSubframe(false);
