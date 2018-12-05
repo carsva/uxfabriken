@@ -91,6 +91,7 @@ class Index extends Component {
       
     };
     var anim = lottie.loadAnimation(animData);
+    anim.setSpeed(2.5);
     
     if (order) {
       anim.playSegments([0,20], true);
