@@ -6,6 +6,7 @@ import './../normalize.css';
 import './../index.css';
 import lottie from './../lottie';
 import burst from '../animations/burst';
+import { isAbsolute } from 'path';
 
 
 const BodyStyle = styled.div`
@@ -138,15 +139,19 @@ quote = () => {
 // `;
 
 
+
+
 const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla" src={`/static/img/pratbubbla.svg`} />
+
 
   
     
     return (
       <BodyStyle>
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
-         <Bubble onClick={this.quote}/>
          <div id="bodymovin"></div>
+
+         <Bubble onClick={this.quote}/>
          <StickerBlockStyle>
             <Sticker text="+46 704 991 702" color={this.state.color} rotation="rotate(6deg)"/>
             <Sticker text="carl@tocco.se" color={this.state.color} rotation="rotate(2deg)"/>

@@ -15,6 +15,13 @@ html {
   
 }
 
+#bodymovin {
+  width: 200px !important;
+  height: 200px !important;
+  position: absolute;
+  opacity: 20%;
+}
+
 #root {
   
 }
