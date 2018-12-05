@@ -75,27 +75,8 @@ class Index extends Component {
 
   }
 
-  
-
-  randomBackground = () => {
-    
-      var x = Math.floor(Math.random() * 256);
-      var y = Math.floor(Math.random() * 256);
-      var z = Math.floor(Math.random() * 256);
-      var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-    
-      document.body.style.background = bgColor;
-  
-      this.setState({
-        color: bgColor
-      })
-      }
-
-  componentDidMount() {
-    this.randomBackground()
+  animation = () => {
     var animationdata = burst();
-    
-    
     var container = document.getElementById('bodymovin');
     // Set up our animation
     var animData = {
@@ -116,6 +97,25 @@ class Index extends Component {
     });
     
     anim.setSubframe(false);
+  }
+
+  randomBackground = () => {
+    
+      var x = Math.floor(Math.random() * 256);
+      var y = Math.floor(Math.random() * 256);
+      var z = Math.floor(Math.random() * 256);
+      var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    
+      document.body.style.background = bgColor;
+  
+      this.setState({
+        color: bgColor
+      })
+      }
+
+  componentDidMount() {
+    this.randomBackground()
+    this.animation()
   };
 
 quote = () => {
