@@ -75,7 +75,7 @@ class Index extends Component {
 
   }
 
-  animation = () => {
+  animationSetup = () => {
     var animationdata = burst();
     var container = document.getElementById('bodymovin');
     // Set up our animation
@@ -96,7 +96,6 @@ class Index extends Component {
 
     });
     
-    anim.setSubframe(false);
   }
 
   randomBackground = () => {
@@ -115,11 +114,12 @@ class Index extends Component {
 
   componentDidMount() {
     this.randomBackground()
-    this.animation()
+    this.animationSetup()
   };
 
 quote = () => {
   this.randomBackground()
+
 }
 
 
