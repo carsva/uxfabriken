@@ -6,6 +6,17 @@ import './../normalize.css';
 import './../index.css';
 import lottie from './../lottie';
 import burst from '../animations/burst';
+import Head from "next/head";
+
+import { MainContext } from "../components";
+
+const H1 = styled.h1`
+  color: #0d2b3e;
+`;
+
+const P = styled.p`
+  color: #7b7c7d;
+`;
 
 const BodyStyle = styled.div`
   display: flex;
@@ -185,7 +196,12 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
   
     
     return (
-      <BodyStyle>
+      <MainContext.Consumer>
+        {stateData => {
+          const { name, ContextNext, styledcomponent, bubbleInfo } = stateData.state;
+          return (
+            <div>
+               <BodyStyle>
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
          <div id="bodymovin"></div>
         
@@ -201,6 +217,15 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
          </StickerBlockStyle>
          
       </BodyStyle>
+              <p>{bubbleInfo[0].text}</p>
+              <H1>{ContextNext}</H1>
+              <P>{styledcomponent}</P>
+              <em>{name}</em>
+            </div>
+          );
+        }}
+      </MainContext.Consumer>
+     
 
     );
   }
