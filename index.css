@@ -11,17 +11,6 @@ body {
 html {
   height: 100%;
   width: 100%;
-    
-  
-}
-
-#bodymovin {
-  width: 350px !important;
-  height: 350px !important;
-  position: absolute;
-  z-index: -1;
-  margin-top: 3.8%;
-  opacity: 0.3;
 }
 
 #root {
@@ -54,6 +43,15 @@ img {
     margin-top: 8em;
   }
   
+#bodymovin {
+  width: 0px;
+  height:0px;
+  position: absolute;
+  z-index: -1;
+  margin-top: -4em;;
+  opacity: 0.3;
+}
+  
 }
 
 
@@ -61,6 +59,15 @@ img {
   .pratbubbla {
     width: 10%;
     margin-top: 2em;
+  }
+
+  #bodymovin {
+    width: 300px;
+    height:300px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 4em;;
+    opacity: 0.1;
   }
 
 }

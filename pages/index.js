@@ -63,7 +63,7 @@ const StickerBlockStyle = styled.div`
 
 `;
 
-
+//Media query example: max-width: 600px; will set these mediaqueries for devices below 600px width
 
 class Index extends Component {
 
