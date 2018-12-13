@@ -32,7 +32,7 @@ const BodyStyle = styled.div`
 const LogoStyle = styled.img`
 @media (min-width: 100px) {
   width: 70%;
-  margin-top: 8em;
+  margin-top: 5em;
   
 }
   
@@ -47,7 +47,7 @@ const LogoStyle = styled.img`
 const ArrowStyle = styled.img`
 @media (min-width: 100px) {
   width: 25%;
-  margin-top: 15em;
+  margin-top: 4em;
   margin-left: 30%;
   position: absolute;
   animation: 1s infinite beatHeart
@@ -91,9 +91,9 @@ const StickerBlockStyle = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
-  margin-top: 6rem;
-  
+  padding: 2rem;
+  margin-top: 1rem;
+  font-size: 0.4em;
 }
 
   @media (min-width: 1000px) {
@@ -120,7 +120,7 @@ const BubbleTextStyle = styled.div`
   height: 6.5rem;
   color: black;
   position:absolute;
-  margin-top: -91%;
+  margin-top: -18%;
   pointer-events: none; 
   text-align: center;
 }
@@ -134,7 +134,7 @@ const BubbleTextStyle = styled.div`
   height: 5rem;
   color: black;
   position: absolute;
-  margin-top: 2.8rem;
+  margin-top: 4.5rem;
   pointer-events: none; 
   text-align: center;
 
