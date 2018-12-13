@@ -39,7 +39,7 @@ const LogoStyle = styled.img`
 
 @media (min-width: 1000px) {
     width: 20%;
-    margin-top: 16em;
+    margin-top: 10em;
     
   }
 `;
@@ -67,7 +67,7 @@ const ArrowStyle = styled.img`
 @media (min-width: 1000px) {
     width: 8%;
     margin-top: 9em;
-    margin-left: 10%;
+    margin-left: 12%;
     position: absolute;
     animation: 1s infinite beatHeart
     
@@ -103,7 +103,7 @@ const StickerBlockStyle = styled.div`
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  margin-top: 10rem;
+  margin-top: 4rem;
 
   }
 
@@ -119,13 +119,16 @@ const BubbleTextStyle = styled.div`
   @media (min-width: 1000px) {
   display: flex;
   align-items: center;
+  font-weight: 700;
   justify-content: center;
-  width: 7rem;
+  width: 8rem;
   height: 5rem;
   color: black;
   position: absolute;
-  margin-top: 3rem;
+  margin-top: 2.8rem;
   pointer-events: none; 
+  text-align: center;
+
 
   }
 
@@ -151,10 +154,10 @@ class Index extends Component {
         text: "Är du en nyfiken person?"
       },
       { 
-        text: "Annars skulle du väl inte klicka vidare?"
+        text: "Det tror jag eftersom du tryckte på bubblan igen?"
       },
       { 
-        text: "Vad händer när du väcker nyfikenhet på din sida?"
+        text: "Vad händer när din webbsida väcker nyfikenhet?"
       },
       { 
         text: "Då kommer kunderna tillbaka."
@@ -163,13 +166,13 @@ class Index extends Component {
         text: "Nu har du tryckt fem gånger på bubblan"
       },
       { 
-        text: "Det vad UX handlar om?"
+        text: "Det är precis vad UX handlar om?"
       },
       { 
         text: "Att genom design skapa en tydlig användarresa"
       },
       { 
-        text: "Vill du ta en kaffe? Skriv ett mail!"
+        text: "Vill du ta en kaffe? Skriv ett mail eller slå en pling!"
       },
       { 
         text: "Ta nu ett djupt andetag..."
