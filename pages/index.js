@@ -112,8 +112,17 @@ const StickerBlockStyle = styled.div`
 const BubbleTextStyle = styled.div`
 
 @media (max-width: 1000px) {
-  
-  
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  justify-content: center;
+  width: 8rem;
+  height: 6.5rem;
+  color: black;
+  position:absolute;
+  margin-top: -91%;
+  pointer-events: none; 
+  text-align: center;
 }
 
   @media (min-width: 1000px) {
