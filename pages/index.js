@@ -66,7 +66,7 @@ const ArrowStyle = styled.img`
 
 @media (min-width: 1000px) {
     width: 5%;
-    margin-top: 11em;
+    margin-top: 9em;
     margin-left: 8%;
     position: absolute;
     animation: 1s infinite beatHeart
@@ -134,7 +134,7 @@ const BubbleTextStyle = styled.div`
   height: 5rem;
   color: black;
   position: absolute;
-  margin-top: 4.5rem;
+  margin-top: 4rem;
   pointer-events: none; 
   text-align: center;
 
