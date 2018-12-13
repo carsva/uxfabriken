@@ -141,6 +141,7 @@ class Index extends Component {
     color: "",
     activeText: "Hej  :)",
     count: 0,
+    arrow: "visable",
     bubbleInfo: [
       { 
         text: ""
@@ -172,9 +173,6 @@ class Index extends Component {
       },
       { 
         text: "Ta nu ett djupt andetag..."
-      },
-      { 
-        text: "...Du är värdefull" 
       },
       { 
         text: "...Du är värdefull" 
@@ -222,17 +220,38 @@ class Index extends Component {
       })
       }
 
+      arrowVisable = () => {
+        if(this.state.arrow === "visable") {
+          return <ArrowStyle src={`/static/img/test.svg`} />
+        }
+         
+        
+        }
+
       textSwitcher = () => {
         let number = this.state.count + 1;
-        let newText = this.state.bubbleInfo[number].text;
-        if(number === 11) {
-          
-        } else {
+
+        if(number <= 10) {
+          let newText = this.state.bubbleInfo[number].text;
           this.setState({
             activeText: newText,
             count: number
-          })
+          }) 
+          
+          if (number === 10) {
+            this.setState({
+              arrow: "invisible",
+              })
+          }
+
+
+            
         }
+        
+        // if(number === 11) {
+        //   
+      
+        
         }
 
   componentDidMount() {
@@ -282,7 +301,7 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
          <div id="bodymovin"></div>
         
          <Bubble onClick={this.quote}/>
-         <ArrowStyle src={`/static/img/test.svg`} />
+         {this.arrowVisable()}
          <BubbleTextStyle>
            <div>{this.state.activeText}</div>
          </BubbleTextStyle>
