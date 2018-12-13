@@ -36,9 +36,21 @@ const LogoStyle = styled.img`
 
 const ArrowStyle = styled.img`
 @media (min-width: 100px) {
-  width: 70%;
-  margin-top: 8em;
+  width: 25%;
+  margin-top: 15em;
+  margin-left: 30%;
+  position: absolute;
+  animation: 1s infinite beatHeart
   
+}
+
+@keyframes beatHeart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
 }
   
 
