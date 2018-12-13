@@ -150,37 +150,34 @@ class Index extends Component {
         text: "Är du en nyfiken person?"
       },
       { 
-        text: "Teeee please"
+        text: "Annars skulle du väl inte klicka vidare?"
       },
       { 
-        text: "Är du en nyfiken person?"
+        text: "Vad händer när du väcker nyfikenhet på din sida?"
       },
       { 
-        text: "Teeee please"
+        text: "Då kommer kunderna tillbaka."
       },
       { 
-        text: "Är du en nyfiken person?"
+        text: "Nu har du tryckt fem gånger på bubblan"
       },
       { 
-        text: "Teeee please"
+        text: "Det vad UX handlar om?"
       },
       { 
-        text: "Är du en nyfiken person?"
+        text: "Att genom design skapa en tydlig användarresa"
       },
       { 
-        text: "Teeee please"
+        text: "Vill du ta en kaffe? Skriv ett mail!"
       },
       { 
-        text: "Är du en nyfiken person?"
+        text: "Ta nu ett djupt andetag..."
       },
       { 
-        text: "Teeee please"
+        text: "...Du är värdefull" 
       },
       { 
-        text: "Är du en nyfiken person?"
-      },
-      { 
-        text: "Teeee please"
+        text: "...Du är värdefull" 
       },
     ]
   }
@@ -228,10 +225,14 @@ class Index extends Component {
       textSwitcher = () => {
         let number = this.state.count + 1;
         let newText = this.state.bubbleInfo[number].text;
-        this.setState({
-          activeText: newText,
-          count: number
-        })
+        if(number === 11) {
+          
+        } else {
+          this.setState({
+            activeText: newText,
+            count: number
+          })
+        }
         }
 
   componentDidMount() {
