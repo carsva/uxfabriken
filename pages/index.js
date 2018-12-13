@@ -39,7 +39,7 @@ const LogoStyle = styled.img`
 
 const StickerBlockStyle = styled.div`
 
-@media (min-width: 100px) {
+@media (max-width: 1000px) {
   width: auto;
   display: flex;
   flex-wrap: wrap;
