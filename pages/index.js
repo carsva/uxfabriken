@@ -6,8 +6,6 @@ import './../normalize.css';
 import './../index.css';
 import lottie from './../lottie';
 import burst from '../animations/burst';
-import { isAbsolute } from 'path';
-
 
 const BodyStyle = styled.div`
   display: flex;
@@ -16,7 +14,6 @@ const BodyStyle = styled.div`
   justify-content: center;
 
   @media (max-width: 567px) {
-    
     
   }
 
@@ -45,7 +42,7 @@ const StickerBlockStyle = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 3rem;
   margin-top: 6rem;
   
 }
