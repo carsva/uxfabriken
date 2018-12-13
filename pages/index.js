@@ -65,9 +65,9 @@ const ArrowStyle = styled.img`
   
 
 @media (min-width: 1000px) {
-    width: 8%;
-    margin-top: 9em;
-    margin-left: 12%;
+    width: 5%;
+    margin-top: 11em;
+    margin-left: 8%;
     position: absolute;
     animation: 1s infinite beatHeart
     
