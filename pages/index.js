@@ -149,9 +149,13 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
       <BodyStyle>
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
          <div id="bodymovin"></div>
-
+         <LogoStyle src={`/static/img/test.svg`} />
+          
          <Bubble onClick={this.quote}/>
+         
+         
          <StickerBlockStyle>
+           
             <Sticker text="+46 704 991 702" color={this.state.color} rotation="rotate(6deg)"/>
             <Sticker text="carl@tocco.se" color={this.state.color} rotation="rotate(2deg)"/>
             <Sticker text="Slottsbacken 8, Gamla Stan, Stockholm" color={this.state.color} rotation="rotate(-3deg)"/>
