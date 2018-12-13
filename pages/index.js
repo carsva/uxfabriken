@@ -110,6 +110,20 @@ const StickerBlockStyle = styled.div`
 
 `;
 
+const BubbleTextStyle = styled.div`
+
+@media (max-width: 1000px) {
+  
+  
+}
+
+  @media (min-width: 1000px) {
+  
+
+  }
+
+`;
+
 //Media query example: max-width: 600px; will set these mediaqueries for devices below 600px width
 
 class Index extends Component {
@@ -207,9 +221,11 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
         
          <Bubble onClick={this.quote}/>
          <ArrowStyle src={`/static/img/test.svg`} />
+         <BubbleTextStyle>
+          {bubbleInfo[0].text}
+         </BubbleTextStyle>
          
          <StickerBlockStyle>
-           
             <Sticker text="+46 704 991 702" color={this.state.color} rotation="rotate(6deg)"/>
             <Sticker text="carl@tocco.se" color={this.state.color} rotation="rotate(2deg)"/>
             <Sticker text="Slottsbacken 8, Gamla Stan, Stockholm" color={this.state.color} rotation="rotate(-3deg)"/>
@@ -217,10 +233,6 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
          </StickerBlockStyle>
          
       </BodyStyle>
-              <p>{bubbleInfo[0].text}</p>
-              <H1>{ContextNext}</H1>
-              <P>{styledcomponent}</P>
-              <em>{name}</em>
             </div>
           );
         }}
