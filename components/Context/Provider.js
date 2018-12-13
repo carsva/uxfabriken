@@ -5,10 +5,11 @@ class Provider extends Component {
   state = {
     bubbleInfo: [
       { 
-        text: "Calle"
+        text: "Hej"
       },
+        
       { 
-
+        text: "Yo"
       },
     ]
   };

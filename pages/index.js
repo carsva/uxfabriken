@@ -118,7 +118,15 @@ const BubbleTextStyle = styled.div`
 }
 
   @media (min-width: 1000px) {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 5rem;
+  color: black;
+  position: absolute;
+  margin-top: 3rem;
+  pointer-events: none; 
 
   }
 
@@ -222,7 +230,7 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
          <Bubble onClick={this.quote}/>
          <ArrowStyle src={`/static/img/test.svg`} />
          <BubbleTextStyle>
-          {bubbleInfo[0].text}
+           <div>{bubbleInfo[0].text}</div>
          </BubbleTextStyle>
          
          <StickerBlockStyle>
