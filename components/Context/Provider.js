@@ -3,15 +3,7 @@ import { MainContext } from "./MainContext";
 
 class Provider extends Component {
   state = {
-    bubbleInfo: [
-      { 
-        text: "Hej"
-      },
-        
-      { 
-        text: "Yo"
-      },
-    ]
+    test: "testie",
   };
 
   render() {

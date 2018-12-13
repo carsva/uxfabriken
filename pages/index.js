@@ -6,7 +6,6 @@ import './../normalize.css';
 import './../index.css';
 import lottie from './../lottie';
 import burst from '../animations/burst';
-import Head from "next/head";
 
 import { MainContext } from "../components";
 
@@ -139,7 +138,51 @@ class Index extends Component {
   constructor () {
   super();
   this.state = {
-    color: ""
+    color: "",
+    activeText: "Hej  :)",
+    count: 0,
+    bubbleInfo: [
+      { 
+        text: ""
+      },
+        
+      { 
+        text: "Är du en nyfiken person?"
+      },
+      { 
+        text: "Teeee please"
+      },
+      { 
+        text: "Är du en nyfiken person?"
+      },
+      { 
+        text: "Teeee please"
+      },
+      { 
+        text: "Är du en nyfiken person?"
+      },
+      { 
+        text: "Teeee please"
+      },
+      { 
+        text: "Är du en nyfiken person?"
+      },
+      { 
+        text: "Teeee please"
+      },
+      { 
+        text: "Är du en nyfiken person?"
+      },
+      { 
+        text: "Teeee please"
+      },
+      { 
+        text: "Är du en nyfiken person?"
+      },
+      { 
+        text: "Teeee please"
+      },
+    ]
   }
 
   }
@@ -182,6 +225,15 @@ class Index extends Component {
       })
       }
 
+      textSwitcher = () => {
+        let number = this.state.count + 1;
+        let newText = this.state.bubbleInfo[number].text;
+        this.setState({
+          activeText: newText,
+          count: number
+        })
+        }
+
   componentDidMount() {
     this.randomBackground()
     this.animationSetup()
@@ -189,6 +241,7 @@ class Index extends Component {
 
 quote = () => {
   this.randomBackground()
+  this.textSwitcher()
   this.animationSetup('svenne')
 
 }
@@ -220,7 +273,7 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
     return (
       <MainContext.Consumer>
         {stateData => {
-          const { name, ContextNext, styledcomponent, bubbleInfo } = stateData.state;
+          const { activeText } = stateData.state;
           return (
             <div>
                <BodyStyle>
@@ -230,7 +283,7 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
          <Bubble onClick={this.quote}/>
          <ArrowStyle src={`/static/img/test.svg`} />
          <BubbleTextStyle>
-           <div>{bubbleInfo[0].text}</div>
+           <div>{this.state.activeText}</div>
          </BubbleTextStyle>
          
          <StickerBlockStyle>
