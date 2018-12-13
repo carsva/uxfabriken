@@ -34,6 +34,33 @@ const LogoStyle = styled.img`
   }
 `;
 
+const ArrowStyle = styled.img`
+@media (min-width: 100px) {
+  width: 70%;
+  margin-top: 8em;
+  
+}
+  
+
+@media (min-width: 1000px) {
+    width: 8%;
+    margin-top: 9em;
+    margin-left: 10%;
+    position: absolute;
+    animation: 1s infinite beatHeart
+    
+  }
+  
+  @keyframes beatHeart {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+  }
+`;
+
 const StickerBlockStyle = styled.div`
 
 @media (max-width: 1000px) {
@@ -149,10 +176,9 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
       <BodyStyle>
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
          <div id="bodymovin"></div>
-         <LogoStyle src={`/static/img/test.svg`} />
-          
+        
          <Bubble onClick={this.quote}/>
-         
+         <ArrowStyle src={`/static/img/test.svg`} />
          
          <StickerBlockStyle>
            
