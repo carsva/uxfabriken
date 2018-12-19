@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   height:100%;
   width: 100%;
   color: white;

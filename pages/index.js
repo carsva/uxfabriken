@@ -6,8 +6,8 @@ import './../normalize.css';
 import './../index.css';
 import lottie from './../lottie';
 import burst from '../animations/burst';
-
 import { MainContext } from "../components";
+
 
 const H1 = styled.h1`
   color: #0d2b3e;
@@ -110,8 +110,8 @@ const StickerBlockStyle = styled.div`
 `;
 
 const BubbleTextStyle = styled.div`
-
 @media (max-width: 1000px) {
+
   display: flex;
   align-items: center;
   font-weight: 700;
@@ -123,6 +123,7 @@ const BubbleTextStyle = styled.div`
   margin-top: -18%;
   pointer-events: none; 
   text-align: center;
+  font-family: 'roboto', sans-serif;
 }
 
   @media (min-width: 1000px) {
@@ -137,6 +138,7 @@ const BubbleTextStyle = styled.div`
   margin-top: 4rem;
   pointer-events: none; 
   text-align: center;
+  font-family: 'Titillium Web', sans-serif;
 
 
   }
