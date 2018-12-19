@@ -165,31 +165,31 @@ class Index extends Component {
         text: "Är du en nyfiken person?"
       },
       { 
-        text: "Det tror jag eftersom du tryckte på bubblan igen?"
+        text: "Det tror jag eftersom du tryckte på bubblan igen."
       },
       { 
-        text: "Vad händer när din webbsida väcker nyfikenhet?"
+        text: "Nu har du tryckt på bubblan tre gånger"
       },
       { 
-        text: "Då kommer kunderna tillbaka."
-      },
-      { 
-        text: "Nu har du tryckt fem gånger på bubblan"
-      },
-      { 
-        text: "Det är precis vad UX handlar om?"
+        text: "Det är precis vad UX handlar om"
       },
       { 
         text: "Att genom design skapa en tydlig användarresa"
       },
       { 
-        text: "Vill du ta en kaffe? Skriv ett mail eller slå en pling!"
+        text: "Kombinera det med något som skapar värde för besökaren"
       },
       { 
-        text: "Ta nu ett djupt andetag..."
+        text: "Då kommer denne tillbaka snart igen"
       },
       { 
-        text: "...Du är värdefull" 
+        text: "Kom förbi så bjuder jag på kaffe och berättar mer"
+      },
+      { 
+        text: "Nu behöver du inte klicka mer..."
+      },
+      { 
+        text: ":)" 
       },
     ]
   }
