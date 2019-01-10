@@ -180,7 +180,7 @@ class Index extends Component {
         text: "...som skapar värde för besökaren"
       },
       { 
-        text: "Då kommer besökaren tillbaka till din sida/produkt snart igen"
+        text: "Då kommer besökaren tillbaka snart igen"
       },
       { 
         text: "Kom förbi på kaffe så berättar jag hur jag kan hjälpa dig"
