@@ -66,7 +66,7 @@ const ArrowStyle = styled.img`
 
 @media (min-width: 1000px) {
     width: 5%;
-    margin-top: 9em;
+    margin-top: 3em;
     margin-left: 8%;
     position: absolute;
     animation: 1s infinite beatHeart
@@ -103,7 +103,6 @@ const StickerBlockStyle = styled.div`
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  margin-top: 4rem;
 
   }
 
@@ -135,7 +134,7 @@ const BubbleTextStyle = styled.div`
   height: 5rem;
   color: black;
   position: absolute;
-  margin-top: 4rem;
+  margin-top: 0rem;
   pointer-events: none; 
   text-align: center;
   font-family: 'Titillium Web', sans-serif;
@@ -175,7 +174,13 @@ const CustomerLogoGroupStyle = styled.div`
 }
 
   @media (min-width: 1000px) {
- 
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+    
     
     
   }
@@ -192,9 +197,11 @@ const CustomerLogoStyle = styled.img`
 }
 
   @media (min-width: 1000px) {
-  width: 10%;
-  margin-top: 2em;
-  margin-bottom: 2em;
+    width: 10%;
+    height: 10%
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    margin-top: 0.8em;
     
     
   }
