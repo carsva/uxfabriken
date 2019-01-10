@@ -47,7 +47,7 @@ const LogoStyle = styled.img`
 const ArrowStyle = styled.img`
 @media (min-width: 100px) {
   width: 25%;
-  margin-top: -18em;
+  margin-top: -10em;
   margin-left: 30%;
   position: absolute;
   animation: 1s infinite beatHeart
@@ -120,7 +120,7 @@ const BubbleTextStyle = styled.div`
   height: 6.5rem;
   color: black;
   position:absolute;
-  margin-top: -26em;
+  margin-top: -18.2em;
   pointer-events: none; 
   text-align: center;
   font-family: 'roboto', sans-serif;
@@ -158,17 +158,43 @@ const CustomerTextStyle = styled.p`
     
     
   }
+  
 
 `;
 
-const CustomerLogoStyle = styled.img`
+const CustomerLogoGroupStyle = styled.div`
+
 @media (max-width: 1000px) {
-  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2em;
   
 }
 
   @media (min-width: 1000px) {
+ 
+    
+    
+  }
+
+`;
+
+const CustomerLogoStyle = styled.img`
+@media (max-width: 1000px) {
+  width: 40%;
+  height: 40%
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  margin-top: 0.8em;
+}
+
+  @media (min-width: 1000px) {
+  width: 10%;
+  margin-top: 2em;
+  margin-bottom: 2em;
     
     
   }
@@ -351,13 +377,15 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
            <div>{this.state.activeText}</div>
          </BubbleTextStyle>
           <CustomerTextStyle>Några varumärken våra medarbetare hjälpt med design...</CustomerTextStyle>
-          <CustomerLogoStyle src={`/static/img/coop.svg`}/>
-          <CustomerLogoStyle src={`/static/img/arla.svg`}/>
-          <CustomerLogoStyle src={`/static/img/marabou.svg`}/>
-          <CustomerLogoStyle src={`/static/img/kobbs.svg`}/>
-          <CustomerLogoStyle src={`/static/img/kraft.svg`}/>
-          <CustomerLogoStyle src={`/static/img/scan.svg`}/>
-          <CustomerLogoStyle src={`/static/img/globen.svg`}/>
+          <CustomerLogoGroupStyle>
+            <CustomerLogoStyle src={`/static/img/coop.svg`}/>
+            <CustomerLogoStyle src={`/static/img/arla.svg`}/>
+            <CustomerLogoStyle src={`/static/img/marabou.svg`}/>
+            <CustomerLogoStyle src={`/static/img/kobbs.svg`}/>
+            <CustomerLogoStyle src={`/static/img/kraft.svg`}/>
+            <CustomerLogoStyle src={`/static/img/scan.svg`}/>
+            <CustomerLogoStyle src={`/static/img/globen.svg`}/>
+          </CustomerLogoGroupStyle>
           
 
 
