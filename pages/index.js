@@ -162,34 +162,34 @@ class Index extends Component {
       },
         
       { 
-        text: "Är du en nyfiken person?"
+        text: "Hur är läget?"
       },
       { 
-        text: "Det tror jag eftersom du tryckte på bubblan igen."
+        text: "Det är bra här också tack!"
       },
       { 
         text: "Nu har du tryckt på bubblan tre gånger"
       },
       { 
-        text: "Det är precis vad UX handlar om"
+        text: "Det är precis vad User Experience handlar om (UX)"
       },
       { 
-        text: "Att genom design skapa en tydlig användarresa"
+        text: "Att genom design skapa en tydlig användarresa..."
       },
       { 
-        text: "Kombinera det med något som skapar värde för besökaren"
+        text: "...som skapar värde för besökaren"
       },
       { 
-        text: "Då kommer denne tillbaka snart igen"
+        text: "Då kommer besökaren tillbaka till din sida/produkt snart igen"
       },
       { 
-        text: "Kom förbi så bjuder jag på kaffe och berättar mer"
+        text: "Kom förbi på kaffe så berättar jag hur jag kan hjälpa dig"
       },
       { 
         text: "Nu behöver du inte klicka mer..."
       },
       { 
-        text: ":)" 
+        text: "Ha en skön dag!" 
       },
     ]
   }
