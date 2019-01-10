@@ -189,7 +189,7 @@ class Index extends Component {
         text: "Nu behöver du inte klicka mer..."
       },
       { 
-        text: "Ha en skön dag!" 
+        text: "Vi ses!" 
       },
     ]
   }
