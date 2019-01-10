@@ -47,7 +47,7 @@ const LogoStyle = styled.img`
 const ArrowStyle = styled.img`
 @media (min-width: 100px) {
   width: 25%;
-  margin-top: 4em;
+  margin-top: -18em;
   margin-left: 30%;
   position: absolute;
   animation: 1s infinite beatHeart
@@ -120,7 +120,7 @@ const BubbleTextStyle = styled.div`
   height: 6.5rem;
   color: black;
   position:absolute;
-  margin-top: -18%;
+  margin-top: -27em;
   pointer-events: none; 
   text-align: center;
   font-family: 'roboto', sans-serif;
@@ -141,6 +141,36 @@ const BubbleTextStyle = styled.div`
   font-family: 'Titillium Web', sans-serif;
 
 
+  }
+
+`;
+
+const CustomerTextStyle = styled.p`
+@media (max-width: 1000px) {
+  width: 70%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+  
+}
+
+  @media (min-width: 1000px) {
+    
+    
+  }
+
+`;
+
+const CustomerLogoStyle = styled.img`
+@media (max-width: 1000px) {
+  width: 30%;
+  margin-bottom: 2em;
+  
+}
+
+  @media (min-width: 1000px) {
+    
+    
   }
 
 `;
@@ -320,7 +350,15 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
          <BubbleTextStyle>
            <div>{this.state.activeText}</div>
          </BubbleTextStyle>
-          <p>Några varumärken våra medarbetare hjälpt med design</p>
+          <CustomerTextStyle>Några varumärken våra medarbetare hjälpt med design</CustomerTextStyle>
+          <CustomerLogoStyle src={`/static/img/coop.svg`}/>
+          <CustomerLogoStyle src={`/static/img/arla.svg`}/>
+          <CustomerLogoStyle src={`/static/img/marabou.svg`}/>
+          <CustomerLogoStyle src={`/static/img/kobbs.svg`}/>
+          <CustomerLogoStyle src={`/static/img/kraft.svg`}/>
+          <CustomerLogoStyle src={`/static/img/scan.svg`}/>
+          <CustomerLogoStyle src={`/static/img/globen.svg`}/>
+          
 
 
          
