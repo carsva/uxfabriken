@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import posed from 'react-pose';
 import Sticker from '../components/sticker';
 import './../normalize.css';
@@ -7,6 +7,7 @@ import './../index.css';
 import lottie from './../lottie';
 import burst from '../animations/burst';
 import { MainContext } from "../components";
+
 
 
 const H1 = styled.h1`
@@ -208,6 +209,60 @@ const CustomerLogoStyle = styled.img`
 
 `;
 
+const BubbleWrapperAnimation = posed.div({
+  pressable: true,
+  init: { scale: 1 },
+  press: { scale: 0.8 }
+});
+
+const BubbleWrapperStyle = styled.div`
+  position: relative;
+  width: 45%;
+  margin-top: 2.5em;
+  user-select: none;
+  max-width: 200px;
+`;
+
+const PulsingArrowAnimation = keyframes`
+0% {
+  transform: scale(1);
+}
+50% {
+  transform: scale(0.9);
+}
+
+`;
+
+const BubbleWrapperContentStyle = styled(BubbleWrapperAnimation)`
+position: relative;
+`;
+
+const BubbleWrapperImageStyle = styled.img`
+  display: block;
+  width: 100%;
+  height: auto;
+`;
+
+const BubbleWrapperTextStyle = styled.div`
+  position: absolute;
+  color: black;
+  top: 0;
+  left: 0;
+  bottom: 17%;
+  right: 0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const BubbleWrapperArrowStyle = styled.img`
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 110%;
+  width: 50%;
+  animation: 1s infinite ${PulsingArrowAnimation};
+`;
 
 //Media query example: max-width: 600px; will set these mediaqueries for devices below 600px width
 
@@ -350,11 +405,7 @@ quote = () => {
 
 
 
-  const BubbleAnimation = posed.img({
-  pressable: true,
-  init: { scale: 1 },
-  press: { scale: 0.8 }
-});
+
 
 // const Img = styled(Box1)`
 // width:95%;
@@ -363,7 +414,6 @@ quote = () => {
 
 
 
-const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla" src={`/static/img/pratbubbla.svg`} />
 
 
   
@@ -377,12 +427,20 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
                <BodyStyle>
          <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
          <div id="bodymovin"></div>
-        
-         <Bubble onClick={this.quote}/>
-         {this.arrowVisable()}
-         <BubbleTextStyle>
-           <div>{this.state.activeText}</div>
-         </BubbleTextStyle>
+          <BubbleWrapperStyle>
+            
+            <BubbleWrapperArrowStyle src={`/static/img/test.svg`}/>
+         {/* <Bubble onClick={this.quote}/>
+         {this.ararowVisable()} */}
+         <BubbleWrapperContentStyle onClick={this.quote}>
+         <BubbleWrapperImageStyle src={`/static/img/pratbubbla.svg`}/>  
+         <BubbleWrapperTextStyle>
+           {this.state.activeText}
+         </BubbleWrapperTextStyle>
+         </BubbleWrapperContentStyle>
+
+         
+         </BubbleWrapperStyle>
           <CustomerTextStyle>Några varumärken våra medarbetare hjälpt med design...</CustomerTextStyle>
           <CustomerLogoGroupStyle>
             <CustomerLogoStyle src={`/static/img/coop.svg`}/>
