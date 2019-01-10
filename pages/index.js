@@ -319,6 +319,9 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
          <BubbleTextStyle>
            <div>{this.state.activeText}</div>
          </BubbleTextStyle>
+          <p>Några varumärken våra medarbetare hjälpt med design</p>
+          
+
          
          <StickerBlockStyle>
             <Sticker text="+46 704 991 702" color={this.state.color} rotation="rotate(6deg)"/>
