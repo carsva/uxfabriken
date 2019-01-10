@@ -174,7 +174,7 @@ class Index extends Component {
         text: "Det är precis vad User Experience handlar om (UX)"
       },
       { 
-        text: "Att genom design skapa en tydlig användarresa..."
+        text: "Att skapa en tydlig användarresa..."
       },
       { 
         text: "...som skapar värde för besökaren"
