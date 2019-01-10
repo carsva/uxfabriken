@@ -145,6 +145,7 @@ const BubbleTextStyle = styled.div`
 
 `;
 
+
 //Media query example: max-width: 600px; will set these mediaqueries for devices below 600px width
 
 class Index extends Component {
@@ -320,7 +321,7 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
            <div>{this.state.activeText}</div>
          </BubbleTextStyle>
           <p>Några varumärken våra medarbetare hjälpt med design</p>
-          
+
 
          
          <StickerBlockStyle>
