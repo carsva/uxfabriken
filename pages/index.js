@@ -92,7 +92,7 @@ const StickerBlockStyle = styled.div`
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  margin-top: 1rem;
+  margin-top: -3em;
   font-size: 0.4em;
 }
 
@@ -120,7 +120,7 @@ const BubbleTextStyle = styled.div`
   height: 6.5rem;
   color: black;
   position:absolute;
-  margin-top: -27em;
+  margin-top: -26em;
   pointer-events: none; 
   text-align: center;
   font-family: 'roboto', sans-serif;
@@ -350,7 +350,7 @@ const Bubble = () => <BubbleAnimation onClick={this.quote} className="pratbubbla
          <BubbleTextStyle>
            <div>{this.state.activeText}</div>
          </BubbleTextStyle>
-          <CustomerTextStyle>Några varumärken våra medarbetare hjälpt med design</CustomerTextStyle>
+          <CustomerTextStyle>Några varumärken våra medarbetare hjälpt med design...</CustomerTextStyle>
           <CustomerLogoStyle src={`/static/img/coop.svg`}/>
           <CustomerLogoStyle src={`/static/img/arla.svg`}/>
           <CustomerLogoStyle src={`/static/img/marabou.svg`}/>
