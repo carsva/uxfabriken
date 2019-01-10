@@ -47,7 +47,7 @@ const LogoStyle = styled.img`
 const ArrowStyle = styled.img`
 @media (min-width: 100px) {
   width: 25%;
-  margin-top: -10em;
+  margin-top: -18em;
   margin-left: 30%;
   position: absolute;
   animation: 1s infinite beatHeart
@@ -119,7 +119,7 @@ const BubbleTextStyle = styled.div`
   height: 6.5rem;
   color: black;
   position:absolute;
-  margin-top: -18.2em;
+  margin-top: -24.8em;
   pointer-events: none; 
   text-align: center;
   font-family: 'roboto', sans-serif;
@@ -193,7 +193,7 @@ const CustomerLogoStyle = styled.img`
   height: 40%
   margin-left: 0.8em;
   margin-right: 0.8em;
-  margin-top: 0.8em;
+  margin-top: 2em;
 }
 
   @media (min-width: 1000px) {
