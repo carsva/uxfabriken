@@ -292,7 +292,7 @@ class Index extends Component {
         text: "Nu har du tryckt på bubblan tre gånger"
       },
       { 
-        text: "Det är precis vad User Experience handlar om (UX)"
+        text: "Det är precis vad User Experience (UX) handlar om"
       },
       { 
         text: "Att skapa en tydlig användarresa..."
@@ -307,10 +307,10 @@ class Index extends Component {
         text: "Kom förbi på kaffe så berättar jag hur jag kan hjälpa dig"
       },
       { 
-        text: "Nu behöver du inte klicka mer..."
+        text: "Trevlig dag önskar en liten fabrik med stora ambitioner"
       },
       { 
-        text: "Vi ses!" 
+        text: "Tack för pratstunden!" 
       },
     ]
   }
