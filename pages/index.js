@@ -448,8 +448,10 @@ quote = () => {
             <CustomerLogoStyle src={`/static/img/coop.svg`}/>
             <CustomerLogoStyle src={`/static/img/arla.svg`}/>
             <CustomerLogoStyle src={`/static/img/marabou.svg`}/>
-            <CustomerLogoStyle src={`/static/img/kobbs.svg`}/>
+            <CustomerLogoStyle src={`/static/img/aways.svg`}/>
             <CustomerLogoStyle src={`/static/img/kraft.svg`}/>
+            <CustomerLogoStyle src={`/static/img/jta.svg`}/>
+            <CustomerLogoStyle src={`/static/img/kobbs.svg`}/>
             <CustomerLogoStyle src={`/static/img/scan.svg`}/>
             <CustomerLogoStyle src={`/static/img/globen.svg`}/>
           </CustomerLogoGroupStyle>
