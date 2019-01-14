@@ -250,6 +250,7 @@ const BubbleWrapperTextStyle = styled.div`
   left: 0;
   bottom: 17%;
   right: 0;
+  padding: 1em;
   display:flex;
   text-align: center;
   align-items: center;
