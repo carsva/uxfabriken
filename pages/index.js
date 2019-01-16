@@ -177,7 +177,7 @@ const CustomerLogoGroupStyle = styled.div`
   @media (min-width: 1000px) {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 50%;
     align-items: center;
     justify-content: center;
     margin-bottom: 2em;
@@ -198,7 +198,7 @@ const CustomerLogoStyle = styled.img`
 }
 
   @media (min-width: 1000px) {
-    width: 10%;
+    width: 12%;
     height: 10%
     margin-left: 0.8em;
     margin-right: 0.8em;
