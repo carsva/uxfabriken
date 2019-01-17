@@ -304,7 +304,7 @@ class Index extends Component {
         text: "Då kommer besökaren tillbaka snart igen"
       },
       { 
-        text: "Kom förbi på kaffe så berättar jag hur jag kan hjälpa dig"
+        text: "Kom förbi på kaffe så berättar vi hur vi kan hjälpa dig"
       },
       { 
         text: "Trevlig dag önskar en liten fabrik med stora ambitioner"
@@ -461,7 +461,7 @@ quote = () => {
          
          <StickerBlockStyle>
             <Sticker text="+46 704 991 702" color={this.state.color} rotation="rotate(6deg)"/>
-            <Sticker text="carl@tocco.se" color={this.state.color} rotation="rotate(2deg)"/>
+            <Sticker text="hej@uxfabriken.com" color={this.state.color} rotation="rotate(2deg)"/>
             <Sticker text="Slottsbacken 8, Gamla Stan, Stockholm" color={this.state.color} rotation="rotate(-3deg)"/>
             <Sticker text=":)" color={this.state.color} rotation="rotate(4deg)"/>
          </StickerBlockStyle>
