@@ -151,11 +151,11 @@ const CustomerTextStyle = styled.p`
   margin-top: 3em;
   margin-bottom: 3em;
   text-align: center;
-  
+  color: black;
 }
 
   @media (min-width: 1000px) {
-    
+    color: black;
     
   }
   
@@ -443,7 +443,7 @@ quote = () => {
 
          
          </BubbleWrapperStyle>
-          <CustomerTextStyle>Några varumärken vi hjälpt...</CustomerTextStyle>
+          <CustomerTextStyle>Några varumärken vi hjälpt med vår design...</CustomerTextStyle>
           <CustomerLogoGroupStyle>
             <CustomerLogoStyle src={`/static/img/coop.svg`}/>
             <CustomerLogoStyle src={`/static/img/arla.svg`}/>
