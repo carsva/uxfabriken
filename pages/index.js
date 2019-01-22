@@ -304,7 +304,7 @@ class Index extends Component {
         text: "Då kommer besökaren tillbaka snart igen"
       },
       { 
-        text: "Kom förbi på kaffe så berättar vi hur vi kan hjälpa dig"
+        text: "Kom förbi på en kaffe så bollar vi UX & design"
       },
       { 
         text: "Trevlig dag önskar en liten fabrik med stora ambitioner"
@@ -443,7 +443,7 @@ quote = () => {
 
          
          </BubbleWrapperStyle>
-          <CustomerTextStyle>Några varumärken våra medarbetare hjälpt med design...</CustomerTextStyle>
+          <CustomerTextStyle>Några varumärken vi hjälpt...</CustomerTextStyle>
           <CustomerLogoGroupStyle>
             <CustomerLogoStyle src={`/static/img/coop.svg`}/>
             <CustomerLogoStyle src={`/static/img/arla.svg`}/>
