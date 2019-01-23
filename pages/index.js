@@ -443,7 +443,7 @@ quote = () => {
 
          
          </BubbleWrapperStyle>
-          <CustomerTextStyle>Några varumärken vi hjälpt med vår design...</CustomerTextStyle>
+          <CustomerTextStyle>Några varumärken vi hjälpt med design...</CustomerTextStyle>
           <CustomerLogoGroupStyle>
             <CustomerLogoStyle src={`/static/img/coop.svg`}/>
             <CustomerLogoStyle src={`/static/img/arla.svg`}/>
