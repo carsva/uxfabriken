@@ -357,7 +357,7 @@ class Index extends Component {
 
       arrowVisable = () => {
         if(this.state.arrow === "visable") {
-          return <ArrowStyle src={`/static/img/test.svg`} />
+          return <BubbleWrapperArrowStyle src={`/static/img/test.svg`}/>
         }
          
         
@@ -431,9 +431,8 @@ quote = () => {
          <div id="bodymovin"></div>
           <BubbleWrapperStyle>
             
-            <BubbleWrapperArrowStyle src={`/static/img/test.svg`}/>
-         {/* <Bubble onClick={this.quote}/>
-         {this.ararowVisable()} */}
+         {this.arrowVisable()}
+
          <BubbleWrapperContentStyle onClick={this.quote}>
          <BubbleWrapperImageStyle src={`/static/img/pratbubbla.svg`}/>  
          <BubbleWrapperTextStyle>
