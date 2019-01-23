@@ -209,6 +209,27 @@ const CustomerLogoStyle = styled.img`
 
 `;
 
+const CustomerLogoStyle1 = styled.img`
+@media (max-width: 1000px) {
+  width: 40%;
+  height: 40%
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  margin-top: 2em;
+}
+
+  @media (min-width: 1000px) {
+    width: 8%;
+    height: 6%
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    margin-top: 0.8em;
+    
+    
+  }
+
+`;
+
 const BubbleWrapperAnimation = posed.div({
   pressable: true,
   init: { scale: 1 },
@@ -419,7 +440,6 @@ quote = () => {
 
 
   
-    
     return (
       <MainContext.Consumer>
         {stateData => {
@@ -449,10 +469,10 @@ quote = () => {
             <CustomerLogoStyle src={`/static/img/marabou.svg`}/>
             <CustomerLogoStyle src={`/static/img/aways.svg`}/>
             <CustomerLogoStyle src={`/static/img/kraft.svg`}/>
-            <CustomerLogoStyle src={`/static/img/jta.svg`}/>
+            <CustomerLogoStyle1 src={`/static/img/jta.svg`}/>
             <CustomerLogoStyle src={`/static/img/kobbs.svg`}/>
             <CustomerLogoStyle src={`/static/img/scan.svg`}/>
-            <CustomerLogoStyle src={`/static/img/globen.svg`}/>
+            <CustomerLogoStyle1 src={`/static/img/globen.svg`}/>
           </CustomerLogoGroupStyle>
           
 
