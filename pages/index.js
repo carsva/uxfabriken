@@ -283,7 +283,7 @@ class Index extends Component {
           text: "I'm great, thanks!",
         },
         {
-          text: "This is the third time you press this bubble",
+          text: "Third time you press the bubble",
         },
         {
           text: "This is just a small part of what UX is..",
@@ -298,13 +298,19 @@ class Index extends Component {
           text: "...your customer will reward you in great fashion",
         },
         {
-          text: "..If there is just one thing you bring with you today...",
+          text: "..If you bring one thing with you today...",
         },
         {
-          text: "...keep an ongoing dialogue with your customers...",
+          text: "...Talk to your customers every week...",
         },
         {
           text: "They will guide you to great success!",
+        },
+        {
+          text: "You can stop pressing the bubble now",
+        },
+        {
+          text: "Haha stop... that tickles",
         },
       ],
     };
@@ -354,7 +360,7 @@ class Index extends Component {
   textSwitcher = () => {
     let number = this.state.count + 1;
 
-    if (number <= 10) {
+    if (number <= 12) {
       let newText = this.state.bubbleInfo[number].text;
       this.setState({
         activeText: newText,
