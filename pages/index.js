@@ -252,6 +252,19 @@ const BubbleWrapperTextStyle = styled.div`
   justify-content: center;
 `;
 
+const PortfolioTextLink = styled.div`
+  text-decoration: underline;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+  font-weight: 700;
+  margin-top: 3em;
+  margin-right: 4em;
+  margin-bottom: -4em;
+  color: #fff;
+`;
+
 const BubbleWrapperArrowStyle = styled.img`
   display: block;
   position: absolute;
@@ -277,10 +290,10 @@ class Index extends Component {
         },
 
         {
-          text: "How are you?",
+          text: "I'm Carl, Nice to meet you :)",
         },
         {
-          text: "I'm great, thanks!",
+          text: "Lovely day!",
         },
         {
           text: "Third time you press the bubble",
@@ -400,6 +413,10 @@ class Index extends Component {
           const { activeText } = stateData.state;
           return (
             <div>
+              <a target="_blank" href="http://www.uxfabriken.com/portfolio">
+                <PortfolioTextLink>Portfolio</PortfolioTextLink>
+              </a>
+
               <BodyStyle>
                 <LogoStyle src={`/static/img/uxfabriken_logo.svg`} />
                 <div id="bodymovin"></div>
@@ -415,16 +432,15 @@ class Index extends Component {
                     </BubbleWrapperTextStyle>
                   </BubbleWrapperContentStyle>
                 </BubbleWrapperStyle>
-                <CustomerTextStyle>Recent cooperations...</CustomerTextStyle>
+                <CustomerTextStyle>Recent projects...</CustomerTextStyle>
                 <CustomerLogoGroupStyle>
                   <CustomerLogoStyle src={`/static/img/awakeaware.svg`} />
                   <CustomerLogoStyle src={`/static/img/telia.svg`} />
                   <CustomerLogoStyle src={`/static/img/gastrofy.svg`} />
                   <CustomerLogoStyle src={`/static/img/tocaboca.svg`} />
                 </CustomerLogoGroupStyle>
-
                 <CustomerTextStyle>
-                  Successful cooperations a while ago...
+                  Successful projects a while ago...
                 </CustomerTextStyle>
                 <CustomerLogoGroupStyle>
                   <CustomerLogoStyle src={`/static/img/coop.svg`} />
@@ -437,7 +453,6 @@ class Index extends Component {
                   <CustomerLogoStyle src={`/static/img/scan.svg`} />
                   <CustomerLogoStyle1 src={`/static/img/globen.svg`} />
                 </CustomerLogoGroupStyle>
-
                 <StickerBlockStyle>
                   <Sticker
                     text="+46 704 991 702"
